@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <!-- <?!= HtmlService.createHtmlOutputFromFile('css').getContent(); ?> -->
+
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center; background-color: #f8fcfd; color: #040c0d; font-family; Verdana, sans-serif; padding: 20px;">
+      <div>
+        <h3 style="margin-bottom: 2px; margin-top: 8px; margin-inline: 20px; color: #d06662;">Follow up on</h3>
+        <h1 style="margin-bottom: 2px; margin-top: 8px; margin-inline: 20px; color: #3cb1c3;"><?= position ?></h1>
+        <p style="margin-inline: 30px; width: fit-content; padding: 6px; margin-inline: auto; margin-block: 0.5rem;">at</p>
+        <h2 style="margin-bottom: 2px; margin-top: 8px; margin-inline: 20px; color: #d576b7;"><?= company ?></h2>
+        <p style="width: fit-content; padding: 6px; margin-inline: auto; margin-block: 0.5rem; ">
+          You last interviewed on <span style="font-weight: bold; white-space: nowrap;"><?= last_interview ?></span>, expected a
+          reply by <span style="font-weight: bold; white-space: nowrap;"><?= expected_reply_date ?></span>, and planned to follow up
+          on <span style="color: #d06662; font-weight: bold; white-space: nowrap;"><?= followup_date ?></span>
+        </p>
+
+        <div style="border-radius: 1rem; border: 4px solid #d576b7; width: fit-content; height: fit-content; margin-block: 2rem; margin-inline: auto; overflow: hidden; box-shadow: 0px 0px 1rem #040b0c2c;">
+          <table style="border-collapse: collapse;">
+            <tr style=":hover {background-color: white;}">
+              <th style="border: 1px solid #ddd; padding: 8px; color: hsl(188, 53%, 50%);">Recruiters</th>
+              <td style="border: 1px solid #ddd; padding: 8px; "><?= recruiter ?></td>
+            </tr>
+            <tr style=":hover {background-color: white;}">
+              <th style="border: 1px solid #ddd; padding: 8px; color: hsl(188, 53%, 50%);">Applied on</th>
+              <td style="border: 1px solid #ddd; padding: 8px; "><?= date_applied ?></td>
+            </tr>
+            <tr style=":hover {background-color: white;}">
+              <th style="border: 1px solid #ddd; padding: 8px; color: hsl(188, 53%, 50%);">If Referred</th>
+              <td style="border: 1px solid #ddd; padding: 8px; "><?= referrer ?></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
