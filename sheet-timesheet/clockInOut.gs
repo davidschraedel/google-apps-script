@@ -1,4 +1,5 @@
 /** David Schraedel - March 2024 */
+// clock in and out, via assigning in and out functions to buttons on a google sheet
 
 const SHEET_NAMES = {
   TIMESHEET: "TimeSheet",
